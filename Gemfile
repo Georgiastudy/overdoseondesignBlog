@@ -9,7 +9,7 @@ gem 'jquery-ui-rails'
 end
 
 
- gem 'sqlite3', '1.3.7'
+
 
 
 gem 'jquery-rails'
