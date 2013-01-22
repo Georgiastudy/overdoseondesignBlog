@@ -3,10 +3,14 @@ gem 'rails', '3.2.9'
 gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
+gem 'jquery-ui-rails'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
 gem 'jquery-rails'
+gem 'juggernaut'
+gem "guard-rspec"
+gem 'letter_opener'
 gem "rspec-rails", ">= 2.11.4", :group => [:development, :test]
 gem "database_cleaner", ">= 0.9.1", :group => :test
 gem "email_spec", ">= 1.4.0", :group => :test

@@ -1,0 +1,7 @@
+class CategoriesPosts < ActiveRecord::Migration
+  def up
+  end
+
+  def down
+  end
+end

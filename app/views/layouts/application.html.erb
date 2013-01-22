@@ -8,12 +8,19 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
+
   </head>
+
   <body class="<%= controller_name %> <%= action_name %>">
     <header class="navbar navbar-fixed-top">
       <nav class="navbar-inner">
         <div class="container">
           <%= render 'layouts/navigation' %>
+        </div>
+      </nav>
+ <nav class="navbar-inner">
+        <div class="container">
+
         </div>
       </nav>
     </header>
@@ -26,10 +33,14 @@
               <%= yield %>
             </div>
           </div>
+
+
+
           <footer>
           </footer>
         </div>
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
+
   </body>
 </html>

@@ -1,0 +1,4 @@
+class Request < ActiveRecord::Base
+  attr_accessible :content, :date, :email, :name, :title
+validates_presence of :date
+end

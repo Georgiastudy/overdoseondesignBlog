@@ -1,0 +1,15 @@
+<%= simple_form_for(@request) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="fields">
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :title %>
+    <%= f.text_field :date %>
+    <%= f.input :content %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
