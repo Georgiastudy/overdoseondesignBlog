@@ -4725,6 +4725,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 10, ../../../../.rvm/gems/ruby-1.9.3-p327/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar {
+
   overflow: visible;
   margin-bottom: 20px;
   *position: relative;
@@ -4733,6 +4734,7 @@ input[type="submit"].btn.btn-mini {
 
 /* line 21, ../../../../.rvm/gems/ruby-1.9.3-p327/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-inner {
+
   min-height: 100px;
   padding-left: 20px;
   padding-right: 20px;

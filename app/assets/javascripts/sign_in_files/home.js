@@ -1,7 +1,6 @@
 (function() {
   var _this = this;
 
-  alert(3);
 
   jQuery(function() {});
 

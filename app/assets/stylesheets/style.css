@@ -12,7 +12,7 @@
 ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
 
 /* HTML ELEMENTS */
-body { background-color:#1b2940; font:62.5% Georgia,'Times New Roman',serif; letter-spacing:1; }
+body { background-color:#1b2940; font:150% Georgia,'Times New Roman',serif; letter-spacing:1; }
 
 /* COMMON CLASSES */
 .break { clear:both; }
@@ -48,7 +48,7 @@ body { background-color:#1b2940; font:62.5% Georgia,'Times New Roman',serif; let
 .pictured a:hover { text-decoration:underline; }
 
 /* CONTROLS */
-.btn { height:32px; width:32px; float:left; cursor:pointer; }
+.btn { float:left; cursor:pointer; }
 #back { background-image:url("../images/btn_back.png"); }
 #next { background-image:url("../images/btn_next.png"); }
 #control { background-image:url("../images/btn_pause.png"); }

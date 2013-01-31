@@ -11,7 +11,7 @@ end
 
 gem 'sqlite3'
 
-
+gem "less-rails"
 gem 'jquery-rails'
 gem 'juggernaut'
 gem "guard-rspec"
@@ -24,6 +24,7 @@ gem "launchy", ">= 2.1.2", :group => :test
 gem "capybara", ">= 2.0.1", :group => :test
 gem "factory_girl_rails", ">= 4.1.0", :group => [:development, :test]
 gem "bootstrap-sass", ">= 2.2.2.0"
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "devise", ">= 2.1.2"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"

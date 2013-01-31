@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+<script>
+var d = 0;
+
+
+function slideshow(key)
+{
+if(d==0){
+var x = document.getElementById("slideshow").innerHTML = "<img src = 'http://restrack.me/images/ruby.png' width=150 />";
+
+}else{
+
+var y = document.getElementById("slideshow").innerHTML = "<img src = 'http://getcurious.com/wp-content/uploads/2012/07/atlanta.jpg' width=150 />";
+}
+d++;
+if(d>2){
+d=0;
+}
+
+
+setTimeout("slideshow(d)",5000);
+
+
+
+
+}
+</script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Overdose" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Overdose" %>">
@@ -16,27 +43,100 @@
       <nav class="navbar-inner">
         <div class="container">
           <%= render 'layouts/navigation' %>
-        </div>
-      </nav>
- <nav class="navbar-inner">
-        <div class="container">
+
+
+<form class="form-inline pull-right">
+  <input type="text" class="input-small" placeholder="Email">
+  <input type="password" class="input-small" placeholder="Password">
+  <label class="checkbox">
+    <input type="checkbox"> Remember me
+  </label>
+  <button type="submit" class="btn">Sign in</button>
+</form>
+    </div>
 
         </div>
+ 
       </nav>
+ 
     </header>
+
+
     <div id="main" role="main">
       <div class="container">
         <div class="content">
+ <div class="page-header">
+            <h1>Rodger On Rails <small>A Developer's Experience</small></h1>
+          </div>
            <div class="row">
-            <div class="span12">
+            <div class="span10">
+
               <%= render 'layouts/messages' %>
               <%= yield %>
-            </div>
-          </div>
 
+            </div>
+
+       
+         
+          <table class="table table-bordered table-striped">
+            <thead>
+             <tr>
+               <th style="width: 200px;">Name</th>
+               <th style="width: 200px;">type</th>
+               <th style="width: 200px;">default</th>
+               <th>description</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>offset</td>
+               <td>number</td>
+               <td>10</td>
+               <td>Pixels to offset from top when calculating position of scroll.</td>
+             </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-bordered table-striped pull-right" style="width: 400px;">
+            <thead>
+             <tr>
+               <th style="width: 200px;">Slideshow</th>
+             
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               
+               <td><div id = "slideshow">
+
+</div></td>
+             </tr>
+   <tr>
+               <td> <div class="btn-toolbar">
+
+    <div class="btn-group">
+     
+    <a class="btn" href="#" onmouseover="slideshow(0)"><i class="icon-align-left"></i></a>
+    <a class="btn" href="#"><i class="icon-align-center"></i></a>
+    <a class="btn" href="#"><i class="icon-align-right"></i></a>
+    <a class="btn" href="#"><i class="icon-align-justify"></i></a>
+
+    </div></td>
+               
+              
+            
+             </tr>
+            </tbody>
+          </table>
+ 
 
 
           <footer>
+<audio autoplay="autoplay" controls="controls" onclick="alert('This feature is currently under construction')">  
+   <source src="/assets/music/george.mp3" />  
+</audio> 
+
+
           </footer>
         </div>
       </div> <!--! end of .container -->

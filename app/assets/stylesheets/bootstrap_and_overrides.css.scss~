@@ -1,12 +1,12 @@
 $btnPrimaryBackground: #f00;
 $navbarBackground: white;
-$navbarLinkBackgroundHover: gray;
-
-$bodyBackground: lightblue;
+$navbarLinkBackgroundHover: green;
+$btn: right;
+$bodyBackground: black;
 $navbarLinkColor: orange;
-$navbarHeight: 100px;
+$navbarHeight: 50px;
 @import "bootstrap";
-body { padding-top: 150px; }
+
 @import "bootstrap-responsive";
 
 

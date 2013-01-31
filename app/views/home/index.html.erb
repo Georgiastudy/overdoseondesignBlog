@@ -1,5 +1,108 @@
+          
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">…</div>
+    <div class="item"><img src="http://getcurious.com/wp-content/uploads/2012/07/atlanta.jpg" /></div>
+    <div class="item">…</div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+<table class="table table-bordered table-striped pull-right" style="width: 100%;">
+            <thead>
+             <tr>
+               <th style="width: 200px;">Slideshow</th>
+             
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               
+               <td><div id = "slideshow">
+
+</div></td>
+             </tr>
+   <tr>
+               <td> <div class="btn-toolbar">
+
+    <div class="btn-group">
+     
+    <a class="btn" href="#" onmouseover="slideshow(0)"><i class="icon-align-left"></i></a>
+    <a class="btn" href="#"><i class="icon-align-center"></i></a>
+    <a class="btn" href="#"><i class="icon-align-right"></i></a>
+    <a class="btn" href="#"><i class="icon-align-justify"></i></a>
+
+    </div></td>
+               
+              
+            
+             </tr>
+            </tbody>
+          </table>
+ 
+<br />
 <h3>Home</h3>
-<div id = 'annual'></div>
+
+
 <% @users.each do |user| %>
   <p>User: <%=link_to user.name, user %></p>
 <% end %>
+
+<div class="well">
+
+Hello, Welcome to my blog
+<br />
+   <div class="row">
+            <div class="span10">
+              Weclome to my blog
+              <%= yield %>
+            </div>
+</div>
+
+
+<div class="row">
+            <div class="span3">
+             This blog is developed for educational purposes. I want to explore everything I can about Ruby on Rails and the MVC achitecture. <br />
+         <div class="btn-group">
+  <button class="btn">Action</button>
+  <button class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+  </ul>
+</div>
+            </div>
+    <div class="span3">
+              Who am I? 
+My name is Rodger Stallworth and I am a recent graduate of Georgia Southern University. I am passionate about Software Engineering.
+
+<br />
+         <div class="btn-group">
+  <button class="btn">Action</button>
+  <button class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+  </ul>
+</div>
+            </div>
+   <div class="span3">
+             Who am I? 
+My name is Rodger Stallworth and I am a recent graduate of Georgia Southern University. I am passionate about Software Engineering.
+<br />
+         <div class="btn-group">
+  <button class="btn">Action</button>
+  <button class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+  </ul>
+</div>
+            </div>
+</div>

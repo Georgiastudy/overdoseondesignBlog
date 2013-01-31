@@ -3,9 +3,9 @@ class StaticpageController < ApplicationController
 
   end
 
+  def resume
 
 
-  def privacy
   end
 
   def license

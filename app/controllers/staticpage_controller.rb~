@@ -1,11 +1,11 @@
 class StaticpageController < ApplicationController
   def about
-redirect_to users_path, :alert => "Unable to update user."
+
   end
 
 
 
-  def privacy
+  def resume
   end
 
   def license

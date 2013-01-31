@@ -1,7 +1,7 @@
 Overdose::Application.routes.draw do
   get "about", to: 'staticpage#about'
 
-  get "privacy", to: 'staticpage#privacy'
+  get "resume", to: 'staticpage#resume'
 
   get "staticpage/license"
 
